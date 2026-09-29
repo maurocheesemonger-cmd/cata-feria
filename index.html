@@ -93,6 +93,7 @@ h1,h2,h3,.titulo{font-family:var(--titulo);font-weight:400;letter-spacing:.01em;
   display:inline-flex;align-items:center;justify-content:center;gap:.35em;
   font-size:.9rem;color:var(--tinta-suave);text-decoration:underline;text-underline-offset:3px;
 }
+.enlace-discreto.confirmar{color:var(--rojo);font-weight:600;text-decoration:none;border:1.5px solid var(--rojo);border-radius:10px}
 :focus-visible{outline:3px solid var(--ambar-osc);outline-offset:3px}
 
 /* ---------- Inicio ---------- */
@@ -720,12 +721,25 @@ var DATOS = {
   });
   $("btn-volver-mapa").addEventListener("click", function(){ mostrar("mapa"); pintarMapa(false); });
 
-  function reiniciar(){
-    if (!window.confirm("¿Reiniciar la ruta? Se borrará tu progreso.")) return;
+  // Confirmación con doble toque dentro de la página: window.confirm() está
+  // bloqueado en algunos navegadores integrados (Instagram, lectores de QR, iframes).
+  var TXT_REINICIAR = "↺ Reiniciar ruta", tReiniciar;
+  function reiniciar(e){
+    var b = e.currentTarget;
+    if (!b.classList.contains("confirmar")){
+      b.classList.add("confirmar");
+      b.textContent = "¿Seguro? Toca otra vez para reiniciar";
+      clearTimeout(tReiniciar);
+      tReiniciar = setTimeout(function(){ b.classList.remove("confirmar"); b.textContent = TXT_REINICIAR; }, 4000);
+      return;
+    }
+    clearTimeout(tReiniciar);
+    b.classList.remove("confirmar"); b.textContent = TXT_REINICIAR;
     estado = { empezada:false, hechas:0 };
-    try{ localStorage.removeItem(CLAVE); }catch(e){}
+    try{ localStorage.removeItem(CLAVE); }catch(err){}
     pintarMapa(false);
     mostrar("inicio");
+    aviso("Ruta reiniciada");
   }
   $("btn-reiniciar").addEventListener("click", reiniciar);
   $("btn-reiniciar-2").addEventListener("click", reiniciar);
