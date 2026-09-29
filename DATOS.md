@@ -1,13 +1,13 @@
 # DATOS DE LA CATA — Feria Alicante Gastronómica
 
-> ⚠️ **DATOS INVENTADOS PARA PROBAR.** Sustituir por los reales antes de imprimir el QR.
-> Todo lo que aparece aquí es de ejemplo: nombres de cervezas, quesos, precio, código, Instagram y teléfono.
+> ⚠️ **Datos parcialmente de ejemplo.** Ya son reales: nombre de El Refugiō, nombres del mapa, cervezas y su graduación, Instagram de El Refugiō y la cerveza de la parada 3.
+> Siguen siendo de ejemplo: estilos y descripciones de Triguico y Rojica, quesos, precio, código de descuento, Instagram de La Despensa y URLs de las tiendas online ([PENDIENTE]).
 
 ## Negocios
 - **Quesos:** La Despensa de Andrés — quesos artesanos, Mercado de Abastos de Ibi
   - Instagram: @ladespensadeandres
-- **Cerveza:** Refugio de la Cerveza — cerveza artesana, Villena
-  - Instagram: @refugiodelacerveza
+- **Cerveza:** El Refugiō de la Cerveza — cerveza artesana, Villena (se escribe con artículo «El» y Ō con rayita)
+  - Instagram: @elrefugiodelacerveza
 
 ## Bienvenida
 Tres cervezas, seis quesos y un camino que va de lo suave a lo intenso. Sigue el mapa y encuentra el tesoro.
@@ -17,8 +17,10 @@ Tres cervezas, seis quesos y un camino que va de lo suave a lo intenso. Sigue el
 - Precio: 24 €
 
 ## Parada 1 — Suave
-**Cerveza:** Rubia del Refugio · Blonde Ale · 4,8 %
-Descripción: Dorada, ligera y muy fácil de beber. Notas de pan, miel suave y un final limpio.
+**Nombre en el mapa:** La despensa encantada
+
+**Cerveza:** Triguico · Blonde Ale [PENDIENTE confirmar estilo] · 5,2 %
+Descripción [EJEMPLO]: Dorada, ligera y muy fácil de beber. Notas de pan, miel suave y un final limpio.
 
 **Queso 1:** Tierno de cabra de Ibi
 - Leche: cabra pasteurizada
@@ -35,8 +37,10 @@ Descripción: Dorada, ligera y muy fácil de beber. Notas de pan, miel suave y u
 **Por qué maridan:** La cerveza ligera limpia la grasa del queso sin taparlo y realza su frescura láctica.
 
 ## Parada 2 — Media
-**Cerveza:** Ámbar de Villena · Amber Ale · 5,6 %
-Descripción: Color cobre, cuerpo medio y maltas tostadas. Caramelo suave y un amargor equilibrado.
+**Nombre en el mapa:** El refugiō escondido
+
+**Cerveza:** Rojica · Amber Ale [PENDIENTE confirmar estilo] · 5,2 %
+Descripción [EJEMPLO]: Color cobre, cuerpo medio y maltas tostadas. Caramelo suave y un amargor equilibrado.
 
 **Queso 1:** Semicurado de oveja
 - Leche: oveja cruda
@@ -53,8 +57,10 @@ Descripción: Color cobre, cuerpo medio y maltas tostadas. Caramelo suave y un a
 **Por qué maridan:** El caramelo tostado de la malta abraza el ahumado y la avellana del queso.
 
 ## Parada 3 — Intensa
-**Cerveza:** Noche en el Castillo · Imperial Stout · 8,5 %
-Descripción: Negra y densa, con cacao, café y regaliz. Cálida y larga en boca.
+**Nombre en el mapa:** Noche en el Castillo
+
+**Cerveza:** Noche en el Castillo · Brown Ale · 6 %
+Descripción: Tostada, intensa. Con notas a caramelo tostado, cacao y café. Cálida y larga en boca.
 
 **Queso 1:** Cabrales
 - Leche: vaca, oveja y cabra crudas
@@ -68,9 +74,12 @@ Descripción: Negra y densa, con cacao, café y regaliz. Cálida y larga en boca
 - Maduración: 12 meses
 - Notas: Intenso, cristalino, con notas de aceituna y final largo.
 
-**Por qué maridan:** El dulzor del cacao y el café equilibra la sal y el picante: contraste que se funde en boca.
+**Por qué maridan:** El dulzor de las maltas y el caramelo equilibra la sal y el picante: contraste que se funde en boca.
 
 ## Pantalla final
 - Código de descuento: **TESORO10** — 10 % en tu próxima compra en cualquiera de los dos negocios.
-- Instagram: @ladespensadeandres · @refugiodelacerveza
-- Catas de los sábados: reserva por WhatsApp en el 600 000 000 (sábados a las 12:00, plazas limitadas).
+- Instagram: @ladespensadeandres · @elrefugiodelacerveza
+- «Utiliza tu código de descuento ya» con 2 cuadros que llevan a la tienda online de cada negocio:
+  - La Despensa de Andrés: [PENDIENTE URL tienda online]
+  - El Refugiō de la Cerveza: [PENDIENTE URL tienda online]
+- (Se quita el botón de reservar catas de los sábados.)

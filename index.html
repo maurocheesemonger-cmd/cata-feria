@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Cata de Quesos y Cervezas · Feria Alicante Gastronómica</title>
-<meta name="description" content="Ruta del tesoro: 3 cervezas artesanas de Refugio de la Cerveza y 6 quesos de La Despensa de Andrés.">
+<meta name="description" content="Ruta del tesoro: 3 cervezas artesanas de El Refugiō de la Cerveza y 6 quesos de La Despensa de Andrés.">
 <meta name="theme-color" content="#3b2a1a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -253,7 +253,11 @@ h1,h2,h3,.titulo{font-family:var(--titulo);font-weight:400;letter-spacing:.01em;
 .redes a:active{background:rgba(107,82,56,.1)}
 .redes svg{flex:0 0 auto}
 .final-acciones{display:flex;flex-direction:column;gap:10px}
-.reserva-info{font-size:.85rem;color:var(--tinta-suave);margin-top:-2px}
+.usa-codigo{font-family:var(--titulo);font-size:1.35rem;color:var(--ambar-osc)}
+.tiendas{margin:8px 0 0}
+.tienda{max-width:none;min-height:124px;text-decoration:none;border-width:2px;border-color:var(--ocre);box-shadow:0 2px 0 rgba(120,80,30,.25)}
+.tienda:active{background:rgba(217,138,28,.15)}
+.tienda .ir{margin-top:4px;font-size:.8rem;font-weight:600;color:var(--ambar-osc)}
 
 @media (max-height:700px){
   #inicio h1{font-size:2.2rem}
@@ -286,7 +290,7 @@ h1,h2,h3,.titulo{font-family:var(--titulo);font-weight:400;letter-spacing:.01em;
         <span class="y" aria-hidden="true">&amp;</span>
         <div class="logo">
           <svg width="24" height="26" viewBox="0 0 24 26" aria-hidden="true"><path d="M4 7h13v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M17 10h2.5a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H17" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 7c0-3 3-4.5 5-3 1.5-2.5 5.5-2.5 7 0 2-1 4 .5 3 3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-          <b>Refugio de la Cerveza</b>
+          <b>El Refugiō de la Cerveza</b>
           <small>Cerveza artesana · Villena</small>
         </div>
       </div>
@@ -418,11 +422,27 @@ h1,h2,h3,.titulo{font-family:var(--titulo);font-weight:400;letter-spacing:.01em;
       <p id="codigo-desc"></p>
     </div>
 
+    <div>
+      <p class="usa-codigo">Utiliza tu código de descuento ya</p>
+      <div class="logos tiendas">
+        <a class="logo tienda" id="tienda-0" target="_blank" rel="noopener">
+          <svg width="30" height="24" viewBox="0 0 30 24" aria-hidden="true"><path d="M2 20L15 3l13 17z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="15" r="1.8" fill="currentColor"/><circle cx="18" cy="12" r="1.3" fill="currentColor"/><circle cx="17" cy="17.5" r="1.1" fill="currentColor"/></svg>
+          <b>La Despensa de Andrés</b>
+          <small>Quesos artesanos</small>
+          <span class="ir">Tienda online →</span>
+        </a>
+        <a class="logo tienda" id="tienda-1" target="_blank" rel="noopener">
+          <svg width="24" height="26" viewBox="0 0 24 26" aria-hidden="true"><path d="M4 7h13v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M17 10h2.5a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H17" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 7c0-3 3-4.5 5-3 1.5-2.5 5.5-2.5 7 0 2-1 4 .5 3 3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          <b>El Refugiō de la Cerveza</b>
+          <small>Cerveza artesana</small>
+          <span class="ir">Tienda online →</span>
+        </a>
+      </div>
+    </div>
+
     <div class="redes" id="redes"></div>
 
     <div class="final-acciones">
-      <a class="btn" id="btn-reserva" target="_blank" rel="noopener">Reservar cata de los sábados</a>
-      <p class="reserva-info" id="reserva-info"></p>
       <button class="btn btn-sec" id="btn-volver-mapa" type="button">Ver el mapa</button>
       <p class="pack" id="pack-final"></p>
       <button class="enlace-discreto" id="btn-reiniciar-2" type="button" style="margin:0 auto">↺ Reiniciar ruta</button>
@@ -449,15 +469,15 @@ h1,h2,h3,.titulo{font-family:var(--titulo);font-weight:400;letter-spacing:.01em;
 <script>
 /* =========================================================
    DATOS — editar aquí (copiados de DATOS.md).
-   ⚠️ Ahora mismo son DATOS DE EJEMPLO inventados.
+   ⚠️ Quesos, precio, código y tiendas aún son DE EJEMPLO.
    ========================================================= */
 var DATOS = {
   bienvenida: "Tres cervezas, seis quesos y un camino que va de lo suave a lo intenso. Sigue el mapa y encuentra el tesoro.",
   pack: { texto: "Pack para 2: estuche de 3 cervezas + tabla con 2 piezas de cada queso", precio: "24 €" },
   paradas: [
     {
-      nivel: "Suave", intensidad: 1,
-      cerveza: { nombre: "Rubia del Refugio", estilo: "Blonde Ale · 4,8 %", color: "#f2c14e",
+      lugar: "La despensa encantada", nivel: "Suave", intensidad: 1,
+      cerveza: { nombre: "Triguico", estilo: "Blonde Ale · 5,2 %", color: "#f2c14e",
         desc: "Dorada, ligera y muy fácil de beber. Notas de pan, miel suave y un final limpio." },
       quesos: [
         { nombre: "Tierno de cabra de Ibi", leche: "Cabra pasteurizada", origen: "Ibi (Alicante)", maduracion: "20 días",
@@ -468,8 +488,8 @@ var DATOS = {
       porque: "La cerveza ligera limpia la grasa del queso sin taparlo y realza su frescura láctica."
     },
     {
-      nivel: "Media", intensidad: 2,
-      cerveza: { nombre: "Ámbar de Villena", estilo: "Amber Ale · 5,6 %", color: "#c46a1c",
+      lugar: "El refugiō escondido", nivel: "Media", intensidad: 2,
+      cerveza: { nombre: "Rojica", estilo: "Amber Ale · 5,2 %", color: "#c46a1c",
         desc: "Color cobre, cuerpo medio y maltas tostadas. Caramelo suave y un amargor equilibrado." },
       quesos: [
         { nombre: "Semicurado de oveja", leche: "Oveja cruda", origen: "La Mancha", maduracion: "4 meses",
@@ -480,16 +500,16 @@ var DATOS = {
       porque: "El caramelo tostado de la malta abraza el ahumado y la avellana del queso."
     },
     {
-      nivel: "Intensa", intensidad: 3,
-      cerveza: { nombre: "Noche en el Castillo", estilo: "Imperial Stout · 8,5 %", color: "#2b1608",
-        desc: "Negra y densa, con cacao, café y regaliz. Cálida y larga en boca." },
+      lugar: "Noche en el Castillo", nivel: "Intensa", intensidad: 3,
+      cerveza: { nombre: "Noche en el Castillo", estilo: "Brown Ale · 6 %", color: "#5a2e12",
+        desc: "Tostada, intensa. Con notas a caramelo tostado, cacao y café. Cálida y larga en boca." },
       quesos: [
         { nombre: "Cabrales", leche: "Vaca, oveja y cabra crudas", origen: "Picos de Europa (Asturias)", maduracion: "3 meses en cueva",
           notas: "Azul potente, picante y salino, con textura untuosa." },
         { nombre: "Oveja viejo en aceite", leche: "Oveja cruda", origen: "Ibi (Alicante)", maduracion: "12 meses",
           notas: "Intenso, cristalino, con notas de aceituna y final largo." }
       ],
-      porque: "El dulzor del cacao y el café equilibra la sal y el picante: contraste que se funde en boca."
+      porque: "El dulzor de las maltas y el caramelo equilibra la sal y el picante: contraste que se funde en boca."
     }
   ],
   final: {
@@ -497,12 +517,13 @@ var DATOS = {
     codigoDesc: "10 % en tu próxima compra en cualquiera de los dos negocios.",
     instagram: [
       { usuario: "ladespensadeandres", nombre: "La Despensa de Andrés" },
-      { usuario: "refugiodelacerveza", nombre: "Refugio de la Cerveza" }
+      { usuario: "elrefugiodelacerveza", nombre: "El Refugiō de la Cerveza" }
     ],
-    reserva: {
-      url: "https://wa.me/34600000000?text=" + encodeURIComponent("Hola, quiero reservar una cata de los sábados"),
-      info: "Sábados a las 12:00 · plazas limitadas · WhatsApp 600\u00a0000\u00a0000"
-    }
+    // Tiendas online (cuadros de la pantalla final). [PENDIENTE] poner las direcciones reales.
+    tiendas: [
+      "",   // La Despensa de Andrés, p. ej. "https://ladespensadeandres.com/tienda"
+      ""    // El Refugiō de la Cerveza
+    ]
   }
 };
 
@@ -535,13 +556,16 @@ var DATOS = {
 
   document.querySelectorAll(".etiqueta").forEach(function(el){
     var p = DATOS.paradas[+el.dataset.e];
-    el.innerHTML = esc(p.cerveza.nombre) + "<small>" + esc(p.nivel) + "</small>";
+    el.innerHTML = esc(p.lugar) + "<small>" + esc(p.nivel) + "</small>";
   });
 
   $("codigo").textContent = DATOS.final.codigo;
   $("codigo-desc").textContent = DATOS.final.codigoDesc;
-  $("btn-reserva").href = DATOS.final.reserva.url;
-  $("reserva-info").textContent = DATOS.final.reserva.info;
+  DATOS.final.tiendas.forEach(function(url, k){
+    var a = $("tienda-" + k);
+    if (url) a.href = url;
+    else a.addEventListener("click", function(){ aviso("Tienda online: próximamente"); });
+  });
   var igIcon = '<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>';
   $("redes").innerHTML = DATOS.final.instagram.map(function(r){
     return '<a href="https://instagram.com/' + encodeURIComponent(r.usuario) + '" target="_blank" rel="noopener" aria-label="Instagram de ' + esc(r.nombre) + '">' + igIcon + '<span>@' + esc(r.usuario) + '</span></a>';
@@ -592,7 +616,7 @@ var DATOS = {
       b.dataset.estado = e;
       b.textContent = e === "hecha" ? "✓" : String(i+1);
       var p = DATOS.paradas[i];
-      b.setAttribute("aria-label", "Parada " + (i+1) + ": " + p.cerveza.nombre + (e === "hecha" ? " (probada)" : e === "bloqueada" ? " (bloqueada)" : ""));
+      b.setAttribute("aria-label", "Parada " + (i+1) + ": " + p.lugar + (e === "hecha" ? " (probada)" : e === "bloqueada" ? " (bloqueada)" : ""));
     });
     meta.dataset.estado = h >= 3 ? "hecha" : "bloqueada";
     meta.setAttribute("aria-label", h >= 3 ? "Ver el tesoro" : "Tesoro (completa las 3 paradas)");
@@ -636,7 +660,7 @@ var DATOS = {
   function abrirFicha(i){
     var p = DATOS.paradas[i];
     fichaAbierta = i;
-    $("f-num").textContent = "Parada " + (i+1) + " de 3 · " + p.nivel;
+    $("f-num").textContent = "Parada " + (i+1) + " · " + p.lugar;
     var puntos = "";
     for (var k = 1; k <= 3; k++) puntos += '<i class="' + (k <= p.intensidad ? "on" : "") + '"></i>';
     $("f-cuerpo").innerHTML =
