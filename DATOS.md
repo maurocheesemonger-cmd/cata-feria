@@ -1,7 +1,7 @@
 # DATOS DE LA CATA — Feria Alicante Gastronómica
 
 > ⚠️ **Datos parcialmente de ejemplo.** Ya son reales: título «Ruta del tesoro gastronómico», nombre de El Refugiō, nombres del mapa, cervezas y su graduación, Instagram de El Refugiō y la cerveza de la parada 3.
-> Siguen siendo de ejemplo: estilo de Chela y descripciones de Chela y Rojica, quesos, código de descuento, Instagram de La Despensa y URLs de las tiendas online ([PENDIENTE]).
+> Siguen siendo de ejemplo: estilo de Chela y descripciones de Chela y Rojica, quesos, código de descuento, Instagram de La Despensa.
 
 ## Título del mapa
 Ruta del tesoro gastronómico
@@ -84,6 +84,6 @@ Descripción: Tostada, intensa. Con notas a caramelo tostado, cacao y café. Cá
 - Código de descuento: **TESORO10** — 10 % en tu próxima compra en cualquiera de los dos negocios.
 - Instagram: @ladespensadeandres · @elrefugiodelacerveza
 - «Utiliza tu código de descuento ya» con 2 cuadros que llevan a la tienda online de cada negocio:
-  - La Despensa de Andrés: [PENDIENTE URL tienda online]
-  - El Refugiō de la Cerveza: [PENDIENTE URL tienda online]
+  - La Despensa de Andrés: https://ladespensadeandres.com
+  - El Refugiō de la Cerveza: https://share.google/BJm5MC67jqNtWfzF0
 - (Se quita el botón de reservar catas de los sábados.)
