@@ -1,7 +1,10 @@
 # DATOS DE LA CATA — Feria Alicante Gastronómica
 
-> ⚠️ **Datos parcialmente de ejemplo.** Ya son reales: nombre de El Refugiō, nombres del mapa, cervezas y su graduación, Instagram de El Refugiō y la cerveza de la parada 3.
-> Siguen siendo de ejemplo: estilos y descripciones de Triguico y Rojica, quesos, precio, código de descuento, Instagram de La Despensa y URLs de las tiendas online ([PENDIENTE]).
+> ⚠️ **Datos parcialmente de ejemplo.** Ya son reales: título «Ruta del tesoro Gastronómica», nombre de El Refugiō, nombres del mapa, cervezas y su graduación, Instagram de El Refugiō y la cerveza de la parada 3.
+> Siguen siendo de ejemplo: estilo de Chela y descripciones de Chela y Rojica, quesos, precio, código de descuento, Instagram de La Despensa y URLs de las tiendas online ([PENDIENTE]).
+
+## Título del mapa
+Ruta del tesoro Gastronómica
 
 ## Negocios
 - **Quesos:** La Despensa de Andrés — quesos artesanos, Mercado de Abastos de Ibi
@@ -19,7 +22,7 @@ Tres cervezas, seis quesos y un camino que va de lo suave a lo intenso. Sigue el
 ## Parada 1 — Suave
 **Nombre en el mapa:** La despensa encantada
 
-**Cerveza:** Triguico · Blonde Ale [PENDIENTE confirmar estilo] · 5,2 %
+**Cerveza:** Chela · Blonde Ale [PENDIENTE confirmar estilo] · 5,2 %
 Descripción [EJEMPLO]: Dorada, ligera y muy fácil de beber. Notas de pan, miel suave y un final limpio.
 
 **Queso 1:** Tierno de cabra de Ibi
@@ -39,7 +42,7 @@ Descripción [EJEMPLO]: Dorada, ligera y muy fácil de beber. Notas de pan, miel
 ## Parada 2 — Media
 **Nombre en el mapa:** El refugiō escondido
 
-**Cerveza:** Rojica · Amber Ale [PENDIENTE confirmar estilo] · 5,2 %
+**Cerveza:** Rojica · Red Ale · 5,2 %
 Descripción [EJEMPLO]: Color cobre, cuerpo medio y maltas tostadas. Caramelo suave y un amargor equilibrado.
 
 **Queso 1:** Semicurado de oveja
@@ -59,7 +62,7 @@ Descripción [EJEMPLO]: Color cobre, cuerpo medio y maltas tostadas. Caramelo su
 ## Parada 3 — Intensa
 **Nombre en el mapa:** Noche en el Castillo
 
-**Cerveza:** Noche en el Castillo · Brown Ale · 6 %
+**Cerveza:** Imperator · Brown Ale · 6 %
 Descripción: Tostada, intensa. Con notas a caramelo tostado, cacao y café. Cálida y larga en boca.
 
 **Queso 1:** Cabrales

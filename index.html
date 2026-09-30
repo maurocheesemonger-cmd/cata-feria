@@ -121,7 +121,10 @@ h1,h2,h3,.titulo{font-family:var(--titulo);font-weight:400;letter-spacing:.01em;
 /* ---------- Mapa ---------- */
 #mapa{padding-left:10px;padding-right:10px}
 .mapa-cab{display:flex;align-items:center;justify-content:space-between;padding:0 8px 4px}
+.mapa-cab{align-items:flex-start}
 .mapa-cab h2{font-size:1.55rem}
+.t-gastro{display:block;font-size:.72em;font-style:italic;color:var(--ocre);margin-top:1px}
+.contador{padding-top:6px}
 .contador{font-family:var(--titulo);font-size:1.05rem;color:var(--tinta-suave);white-space:nowrap}
 .pista{text-align:center;font-style:italic;color:var(--tinta-suave);font-size:.95rem;min-height:1.4em;padding:0 8px}
 .lienzo{position:relative;width:100%;aspect-ratio:360/600;margin:4px 0 0;flex:0 0 auto}
@@ -308,7 +311,7 @@ h1,h2,h3,.titulo{font-family:var(--titulo);font-weight:400;letter-spacing:.01em;
   <!-- ================= MAPA ================= -->
   <section class="pantalla" id="mapa" aria-labelledby="t-mapa">
     <header class="mapa-cab">
-      <h2 id="t-mapa">Ruta del tesoro</h2>
+      <h2 id="t-mapa">Ruta del tesoro <span class="t-gastro">Gastronómica</span></h2>
       <span class="contador" id="contador" aria-live="polite">0 / 3</span>
     </header>
     <p class="pista" id="pista"></p>
@@ -478,7 +481,7 @@ var DATOS = {
   paradas: [
     {
       lugar: "La despensa encantada", nivel: "Suave", intensidad: 1,
-      cerveza: { nombre: "Triguico", estilo: "Blonde Ale · 5,2 %", color: "#f2c14e",
+      cerveza: { nombre: "Chela", estilo: "Blonde Ale · 5,2 %", color: "#f2c14e",
         desc: "Dorada, ligera y muy fácil de beber. Notas de pan, miel suave y un final limpio." },
       quesos: [
         { nombre: "Tierno de cabra de Ibi", leche: "Cabra pasteurizada", origen: "Ibi (Alicante)", maduracion: "20 días",
@@ -490,7 +493,7 @@ var DATOS = {
     },
     {
       lugar: "El refugiō escondido", nivel: "Media", intensidad: 2,
-      cerveza: { nombre: "Rojica", estilo: "Amber Ale · 5,2 %", color: "#c46a1c",
+      cerveza: { nombre: "Rojica", estilo: "Red Ale · 5,2 %", color: "#c46a1c",
         desc: "Color cobre, cuerpo medio y maltas tostadas. Caramelo suave y un amargor equilibrado." },
       quesos: [
         { nombre: "Semicurado de oveja", leche: "Oveja cruda", origen: "La Mancha", maduracion: "4 meses",
@@ -502,7 +505,7 @@ var DATOS = {
     },
     {
       lugar: "Noche en el Castillo", nivel: "Intensa", intensidad: 3,
-      cerveza: { nombre: "Noche en el Castillo", estilo: "Brown Ale · 6 %", color: "#5a2e12",
+      cerveza: { nombre: "Imperator", estilo: "Brown Ale · 6 %", color: "#5a2e12",
         desc: "Tostada, intensa. Con notas a caramelo tostado, cacao y café. Cálida y larga en boca." },
       quesos: [
         { nombre: "Cabrales", leche: "Vaca, oveja y cabra crudas", origen: "Picos de Europa (Asturias)", maduracion: "3 meses en cueva",
