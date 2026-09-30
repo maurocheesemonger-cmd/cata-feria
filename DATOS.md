@@ -1,10 +1,11 @@
 # DATOS DE LA CATA — Feria Alicante Gastronómica
 
-> ⚠️ **Datos parcialmente de ejemplo.** Ya son reales: título «Ruta del tesoro Gastronómica», nombre de El Refugiō, nombres del mapa, cervezas y su graduación, Instagram de El Refugiō y la cerveza de la parada 3.
-> Siguen siendo de ejemplo: estilo de Chela y descripciones de Chela y Rojica, quesos, precio, código de descuento, Instagram de La Despensa y URLs de las tiendas online ([PENDIENTE]).
+> ⚠️ **Datos parcialmente de ejemplo.** Ya son reales: título «Ruta del tesoro gastronómico», nombre de El Refugiō, nombres del mapa, cervezas y su graduación, Instagram de El Refugiō y la cerveza de la parada 3.
+> Siguen siendo de ejemplo: estilo de Chela y descripciones de Chela y Rojica, quesos, código de descuento, Instagram de La Despensa y URLs de las tiendas online ([PENDIENTE]).
 
 ## Título del mapa
-Ruta del tesoro Gastronómica
+Ruta del tesoro gastronómico
+Subtítulo: Queso y cerveza
 
 ## Negocios
 - **Quesos:** La Despensa de Andrés — quesos artesanos, Mercado de Abastos de Ibi
@@ -17,7 +18,7 @@ Tres cervezas, seis quesos y un camino que va de lo suave a lo intenso. Sigue el
 
 ## Pack
 - Estuche de 3 cervezas + tabla con 2 piezas de cada queso, para 2 personas.
-- Precio: 24 €
+- Sin precio en la web: cada negocio vende lo suyo por separado.
 
 ## Parada 1 — Suave
 **Nombre en el mapa:** La despensa encantada

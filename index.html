@@ -121,9 +121,9 @@ h1,h2,h3,.titulo{font-family:var(--titulo);font-weight:400;letter-spacing:.01em;
 /* ---------- Mapa ---------- */
 #mapa{padding-left:10px;padding-right:10px}
 .mapa-cab{display:flex;align-items:center;justify-content:space-between;padding:0 8px 4px}
-.mapa-cab{align-items:flex-start}
-.mapa-cab h2{font-size:1.55rem}
-.t-gastro{display:block;font-size:.72em;font-style:italic;color:var(--ocre);margin-top:1px}
+.mapa-cab{align-items:flex-start;gap:10px}
+.mapa-cab h2{font-size:1.5rem}
+.t-sub{display:block;font-family:var(--texto);font-size:.52em;font-style:italic;color:var(--ocre);margin-top:3px}
 .contador{padding-top:6px}
 .contador{font-family:var(--titulo);font-size:1.05rem;color:var(--tinta-suave);white-space:nowrap}
 .pista{text-align:center;font-style:italic;color:var(--tinta-suave);font-size:.95rem;min-height:1.4em;padding:0 8px}
@@ -311,7 +311,7 @@ h1,h2,h3,.titulo{font-family:var(--titulo);font-weight:400;letter-spacing:.01em;
   <!-- ================= MAPA ================= -->
   <section class="pantalla" id="mapa" aria-labelledby="t-mapa">
     <header class="mapa-cab">
-      <h2 id="t-mapa">Ruta del tesoro <span class="t-gastro">Gastronómica</span></h2>
+      <h2 id="t-mapa">Ruta del tesoro gastronómico<span class="t-sub">Queso y cerveza</span></h2>
       <span class="contador" id="contador" aria-live="polite">0 / 3</span>
     </header>
     <p class="pista" id="pista"></p>
@@ -473,11 +473,11 @@ h1,h2,h3,.titulo{font-family:var(--titulo);font-weight:400;letter-spacing:.01em;
 <script>
 /* =========================================================
    DATOS — editar aquí (copiados de DATOS.md).
-   ⚠️ Quesos, precio, código y tiendas aún son DE EJEMPLO.
+   ⚠️ Quesos, código y tiendas aún son DE EJEMPLO.
    ========================================================= */
 var DATOS = {
   bienvenida: "Tres cervezas, seis quesos y un camino que va de lo suave a lo intenso. Sigue el mapa y encuentra el tesoro.",
-  pack: { texto: "Pack para 2: estuche de 3 cervezas + tabla con 2 piezas de cada queso", precio: "24 €" },
+  pack: { texto: "Pack para 2: estuche de 3 cervezas + tabla con 2 piezas de cada queso" },  // sin precio: cada negocio vende por separado
   paradas: [
     {
       lugar: "La despensa encantada", nivel: "Suave", intensidad: 1,
@@ -554,7 +554,7 @@ var DATOS = {
   function esc(s){ return String(s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
 
   /* ---------- Textos fijos ---------- */
-  var packTxt = esc(DATOS.pack.texto) + " · <b>" + esc(DATOS.pack.precio) + "</b>";
+  var packTxt = esc(DATOS.pack.texto);
   $("bienvenida").textContent = DATOS.bienvenida;
   ["pack-inicio","pack-mapa","pack-final"].forEach(function(id){ $(id).innerHTML = packTxt; });
 
