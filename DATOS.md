@@ -35,7 +35,7 @@ Descripción [EJEMPLO]: Dorada, ligera y muy fácil de beber. Notas de pan, miel
 **Queso 2:** Zielo — Quesería Zarcillera
 - Leche: cabra [VERIFICAR]
 - Origen: Zarcilla de Ramos, Lorca (Murcia) [VERIFICAR]
-- Maduración: [PENDIENTE]
+- Maduración: 30 días de afinado
 - Notas: Láctico y fresco, con la acidez amable de la cabra. [VERIFICAR]
 
 **Por qué maridan:** La Chela, ligera y fresca, limpia el ahumado y la grasa sin taparlos y realza la acidez láctica de la cabra.
@@ -49,13 +49,13 @@ Descripción [EJEMPLO]: Color cobre, cuerpo medio y maltas tostadas. Caramelo su
 **Queso 1:** Comté AOP — Marcel Petite
 - Leche: vaca cruda (montbéliarde)
 - Origen: Jura (Francia), afinado en el Fort Saint-Antoine
-- Maduración: [PENDIENTE: meses]
+- Maduración: 12 meses de afinado
 - Notas: Avellana tostada, mantequilla y caramelo, con cristales crujientes.
 
 **Queso 2:** Encina Sola curado
 - Leche: [PENDIENTE]
 - Origen: [PENDIENTE]
-- Maduración: [PENDIENTE]
+- Maduración: 7-8 meses
 - Notas: Intenso y equilibrado, con recuerdo a frutos secos y final persistente. [VERIFICAR]
 
 **Por qué maridan:** La malta caramelizada de la Rojica realza los frutos secos y el caramelo de los quesos curados.
@@ -69,14 +69,14 @@ Descripción: Tostada, intensa. Con notas a caramelo tostado, cacao y café. Cá
 **Queso 1:** Patamulo con cerveza — Quesería Zagal de la Mesta (con cerveza Althaia tostada sin gluten)
 - Leche: oveja
 - Origen: [PENDIENTE]
-- Maduración: [PENDIENTE]
+- Maduración: 9 meses
 - Notas: Con cerveza tostada sin gluten de Althaia: malta y pan tostado sobre el sabor profundo de la oveja. [VERIFICAR]
 
-**Queso 2:** Patamulo Azul — Prestes
-- Leche: [PENDIENTE]
-- Origen: [PENDIENTE]
+**Queso 2:** Patamulo Azul — Prestes (datos tomados del azul «Lara & Sara»)
+- Leche: vaca y cabra (raza saanen)
+- Origen: Galicia
 - Maduración: [PENDIENTE]
-- Notas: Azul cremoso y picante, con final largo y salino. [VERIFICAR]
+- Notas: Azul suave, ligeramente picante y con un punto amargo; la cabra le aporta un aroma muy agradable.
 
 **Por qué maridan:** El dulzor de las maltas y el caramelo equilibra la sal y el picante: contraste que se funde en boca.
 
