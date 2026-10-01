@@ -478,9 +478,9 @@ var DATOS = {
         desc: "Dorada, ligera y muy fácil de beber. Notas de pan, miel suave y un final limpio." },
       quesos: [
         { nombre: "San Simón da Costa DOP", leche: "Vaca", origen: "Terra Chá, Lugo (Galicia)", maduracion: "Mín. 45 días, ahumado con abedul",
-          notas: "Ahumado suave de madera, mantecoso y con un punto ácido." },
+          notas: "Corteza dorada y brillante por el ahumado lento con madera de abedul. Pasta mantecosa y elástica, con notas de mantequilla y humo dulce y un final ligeramente ácido." },
         { nombre: "Zielo", queseria: "Quesería Zarcillera", leche: "Cabra", origen: "Zarcilla de Ramos, Lorca (Murcia)", maduracion: "30 días de afinado",
-          notas: "Con tomillo rojo de la zona: láctico y fresco, con la acidez amable de la cabra y un aroma herbal." }
+          notas: "Elaborado con tomillo rojo de la zona. Pasta blanca y delicada, láctica y fresca, con la acidez amable de la cabra y un perfume a monte murciano que se queda en boca." }
       ],
       porque: "La Chela, ligera y fresca, limpia el ahumado y la grasa sin taparlos y realza la acidez láctica de la cabra."
     },
@@ -490,9 +490,9 @@ var DATOS = {
         desc: "Color cobre, cuerpo medio y maltas tostadas. Caramelo suave y un amargor equilibrado." },
       quesos: [
         { nombre: "Comté AOP", queseria: "Marcel Petite", leche: "Vaca cruda (montbéliarde)", origen: "Jura (Francia), afinado en el Fort Saint-Antoine", maduracion: "12 meses de afinado",
-          notas: "Avellana tostada, mantequilla y caramelo, con cristales crujientes." },
+          notas: "Pasta firme y untuosa, salpicada de cristales que crujen. Avellana tostada, mantequilla y un fondo de caramelo y caldo; elegante, profundo y muy largo en boca." },
         { nombre: "Encina Sola curado", queseria: "Quesería Encina Sola", leche: "Oveja pasteurizada", origen: "Ciudad Real", maduracion: "7-8 meses",
-          notas: "Intenso y equilibrado, con recuerdo a frutos secos y final persistente." }
+          notas: "Curado de oveja manchega de pasta compacta y ligeramente cristalina. Sabor franco a oveja, con notas de frutos secos y un leve picor que permanece al final." }
       ],
       porque: "La malta caramelizada de la Rojica realza los frutos secos y el caramelo de los quesos curados."
     },
@@ -502,9 +502,9 @@ var DATOS = {
         desc: "Tostada, intensa. Con notas a caramelo tostado, cacao y café. Cálida y larga en boca." },
       quesos: [
         { nombre: "Patamulo con cerveza", queseria: "Zagal de la Mesta", leche: "Oveja", origen: "Por confirmar", maduracion: "9 meses",
-          notas: "Con cerveza tostada sin gluten de Althaia: malta y pan tostado sobre el sabor profundo de la oveja." },
-        { nombre: "Patamulo Azul", queseria: "Prestes", leche: "Vaca y cabra (saanen)", origen: "Galicia", maduracion: "Por confirmar",
-          notas: "Azul suave, ligeramente picante y con un punto amargo; la cabra le aporta un aroma muy agradable." }
+          notas: "Nueve meses de curación y la cerveza tostada sin gluten de Althaia. La malta y el pan tostado se funden con una oveja intensa, mantecosa y con un punto dulce." },
+        { nombre: "Patamulo Azul", queseria: "Prestes", leche: "Vaca y cabra (saanen)", origen: "Galicia",
+          notas: "Azul suave y cremoso, de vetas finas que dan un picor amable y un punto amargo. La leche de cabra saanen aporta un aroma floral que redondea su fuerza." }
       ],
       porque: "El dulzor de las maltas y el caramelo equilibra la sal y el picante: contraste que se funde en boca."
     }
@@ -669,7 +669,7 @@ var DATOS = {
       '</div>' +
       '<div class="quesos">' + p.quesos.map(function(q){
         return '<article class="queso"><h4>' + iconoQueso + esc(q.nombre) + '</h4>' +
-          '<dl class="datos">' + (q.queseria ? '<dt>Quesería</dt><dd>' + esc(q.queseria) + '</dd>' : '') + '<dt>Leche</dt><dd>' + esc(q.leche) + '</dd><dt>Origen</dt><dd>' + esc(q.origen) + '</dd><dt>Maduración</dt><dd>' + esc(q.maduracion) + '</dd></dl>' +
+          '<dl class="datos">' + (q.queseria ? '<dt>Quesería</dt><dd>' + esc(q.queseria) + '</dd>' : '') + [["Leche", q.leche], ["Origen", q.origen], ["Maduración", q.maduracion]].map(function(d){ return d[1] ? '<dt>' + d[0] + '</dt><dd>' + esc(d[1]) + '</dd>' : ''; }).join("") + '</dl>' +
           '<p class="notas">' + esc(q.notas) + '</p></article>';
       }).join("") + '</div>' +
       '<div class="porque"><b>Por qué maridan</b>' + esc(p.porque) + '</div>';

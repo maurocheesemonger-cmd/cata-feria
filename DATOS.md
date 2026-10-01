@@ -30,14 +30,14 @@ Descripción [EJEMPLO]: Dorada, ligera y muy fácil de beber. Notas de pan, miel
 - Leche: vaca
 - Origen: Terra Chá, Lugo (Galicia)
 - Maduración: mínimo 45 días, ahumado con madera de abedul
-- Notas: Ahumado suave de madera, mantecoso y con un punto ácido.
+- Notas: Corteza dorada y brillante por el ahumado lento con madera de abedul. Pasta mantecosa y elástica, con notas de mantequilla y humo dulce y un final ligeramente ácido.
 
 **Queso 2:** Zielo — Quesería Zarcillera
 - Leche: cabra [VERIFICAR]
 - Origen: Zarcilla de Ramos, Lorca (Murcia) [VERIFICAR]
 - Maduración: 30 días de afinado
 - Lleva tomillo rojo de la zona.
-- Notas: Con tomillo rojo de la zona: láctico y fresco, con la acidez amable de la cabra y un aroma herbal.
+- Notas: Elaborado con tomillo rojo de la zona. Pasta blanca y delicada, láctica y fresca, con la acidez amable de la cabra y un perfume a monte murciano que se queda en boca.
 
 **Por qué maridan:** La Chela, ligera y fresca, limpia el ahumado y la grasa sin taparlos y realza la acidez láctica de la cabra.
 
@@ -51,13 +51,13 @@ Descripción [EJEMPLO]: Color cobre, cuerpo medio y maltas tostadas. Caramelo su
 - Leche: vaca cruda (montbéliarde)
 - Origen: Jura (Francia), afinado en el Fort Saint-Antoine
 - Maduración: 12 meses de afinado
-- Notas: Avellana tostada, mantequilla y caramelo, con cristales crujientes.
+- Notas: Pasta firme y untuosa, salpicada de cristales que crujen. Avellana tostada, mantequilla y un fondo de caramelo y caldo; elegante, profundo y muy largo en boca.
 
 **Queso 2:** Encina Sola curado — Quesería Encina Sola
 - Leche: oveja pasteurizada
 - Origen: Ciudad Real
 - Maduración: 7-8 meses
-- Notas: Intenso y equilibrado, con recuerdo a frutos secos y final persistente. [VERIFICAR]
+- Notas: Curado de oveja manchega de pasta compacta y ligeramente cristalina. Sabor franco a oveja, con notas de frutos secos y un leve picor que permanece al final.
 
 **Por qué maridan:** La malta caramelizada de la Rojica realza los frutos secos y el caramelo de los quesos curados.
 
@@ -71,13 +71,13 @@ Descripción: Tostada, intensa. Con notas a caramelo tostado, cacao y café. Cá
 - Leche: oveja
 - Origen: [PENDIENTE]
 - Maduración: 9 meses
-- Notas: Con cerveza tostada sin gluten de Althaia: malta y pan tostado sobre el sabor profundo de la oveja. [VERIFICAR]
+- Notas: Nueve meses de curación y la cerveza tostada sin gluten de Althaia. La malta y el pan tostado se funden con una oveja intensa, mantecosa y con un punto dulce.
 
 **Queso 2:** Patamulo Azul — Prestes (datos tomados del azul «Lara & Sara»)
 - Leche: vaca y cabra (raza saanen)
 - Origen: Galicia
-- Maduración: [PENDIENTE]
-- Notas: Azul suave, ligeramente picante y con un punto amargo; la cabra le aporta un aroma muy agradable.
+- Maduración: (no se muestra)
+- Notas: Azul suave y cremoso, de vetas finas que dan un picor amable y un punto amargo. La leche de cabra saanen aporta un aroma floral que redondea su fuerza.
 
 **Por qué maridan:** El dulzor de las maltas y el caramelo equilibra la sal y el picante: contraste que se funde en boca.
 
