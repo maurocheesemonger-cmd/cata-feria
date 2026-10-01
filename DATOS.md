@@ -57,7 +57,7 @@ Descripción [EJEMPLO]: Color cobre, cuerpo medio y maltas tostadas. Caramelo su
 - Leche: oveja pasteurizada
 - Origen: Ciudad Real
 - Maduración: 7-8 meses
-- Notas: Curado de oveja manchega de pasta compacta y ligeramente cristalina. Sabor franco a oveja, con notas de frutos secos y un leve picor que permanece al final.
+- Notas: Curado de oveja de pasta compacta y ligeramente cristalina. Sabor franco a oveja, con notas de frutos secos y un leve picor que permanece al final.
 
 **Por qué maridan:** La malta caramelizada de la Rojica realza los frutos secos y el caramelo de los quesos curados.
 
