@@ -36,7 +36,8 @@ Descripción [EJEMPLO]: Dorada, ligera y muy fácil de beber. Notas de pan, miel
 - Leche: cabra [VERIFICAR]
 - Origen: Zarcilla de Ramos, Lorca (Murcia) [VERIFICAR]
 - Maduración: 30 días de afinado
-- Notas: Láctico y fresco, con la acidez amable de la cabra. [VERIFICAR]
+- Lleva tomillo rojo de la zona.
+- Notas: Con tomillo rojo de la zona: láctico y fresco, con la acidez amable de la cabra y un aroma herbal.
 
 **Por qué maridan:** La Chela, ligera y fresca, limpia el ahumado y la grasa sin taparlos y realza la acidez láctica de la cabra.
 
