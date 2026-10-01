@@ -53,9 +53,9 @@ Descripción [EJEMPLO]: Color cobre, cuerpo medio y maltas tostadas. Caramelo su
 - Maduración: 12 meses de afinado
 - Notas: Avellana tostada, mantequilla y caramelo, con cristales crujientes.
 
-**Queso 2:** Encina Sola curado
-- Leche: [PENDIENTE]
-- Origen: [PENDIENTE]
+**Queso 2:** Encina Sola curado — Quesería Encina Sola
+- Leche: oveja pasteurizada
+- Origen: Ciudad Real
 - Maduración: 7-8 meses
 - Notas: Intenso y equilibrado, con recuerdo a frutos secos y final persistente. [VERIFICAR]
 
