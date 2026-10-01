@@ -83,6 +83,7 @@ Descripción: Tostada, intensa. Con notas a caramelo tostado, cacao y café. Cá
 
 ## Pantalla final
 - Código de descuento: **TESORO10** — 10 % en tu próxima compra en cualquiera de los dos negocios.
+- Validez del código: del 1 al 15 de octubre de 2026 (hora de España). Fuera de esas fechas la web oculta el código. ⚠️ Hay que configurar también la caducidad en cada tienda online.
 - Instagram: @ladespensadeandres · @elrefugiodelacerveza
 - «Utiliza tu código de descuento ya» con 2 cuadros que llevan a la tienda online de cada negocio:
   - La Despensa de Andrés: https://ladespensadeandres.com
