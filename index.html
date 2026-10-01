@@ -115,8 +115,6 @@ h1,h2,h3,.titulo{font-family:var(--titulo);font-weight:400;letter-spacing:.01em;
 .y{font-family:var(--titulo);font-size:1.6rem;color:var(--ocre);align-self:center}
 .bienvenida{font-size:1.1rem;font-style:italic;max-width:30ch;margin:18px auto 0}
 .inicio-pie{display:flex;flex-direction:column;gap:12px;padding-bottom:4px}
-.pack{font-size:.82rem;color:var(--tinta-suave);line-height:1.35}
-.pack b{color:var(--tinta);font-weight:600}
 
 /* ---------- Mapa ---------- */
 #mapa{padding-left:10px;padding-right:10px}
@@ -177,7 +175,6 @@ h1,h2,h3,.titulo{font-family:var(--titulo);font-weight:400;letter-spacing:.01em;
 .meta[data-estado="hecha"] svg{transform:scale(1.15) rotate(-6deg)}
 .meta[data-estado="hecha"]{animation:late 2.2s ease-in-out infinite}
 .mapa-pie{margin-top:auto;display:flex;flex-direction:column;align-items:center;gap:0;padding-top:6px}
-.mapa-pie .pack{text-align:center;padding:0 12px}
 .aviso{
   position:fixed;left:50%;bottom:calc(96px + env(safe-area-inset-bottom));transform:translate(-50%,20px);
   background:var(--tinta);color:var(--crema);padding:12px 18px;border-radius:12px;
@@ -304,7 +301,6 @@ h1,h2,h3,.titulo{font-family:var(--titulo);font-weight:400;letter-spacing:.01em;
 
     <div class="inicio-pie">
       <button class="btn" id="btn-empezar" type="button">Empezar la ruta <span aria-hidden="true">→</span></button>
-      <p class="pack" id="pack-inicio"></p>
     </div>
   </section>
 
@@ -391,7 +387,6 @@ h1,h2,h3,.titulo{font-family:var(--titulo);font-weight:400;letter-spacing:.01em;
     </div>
 
     <footer class="mapa-pie">
-      <p class="pack" id="pack-mapa"></p>
       <button class="enlace-discreto" id="btn-reiniciar" type="button">↺ Reiniciar ruta</button>
     </footer>
   </section>
@@ -448,7 +443,6 @@ h1,h2,h3,.titulo{font-family:var(--titulo);font-weight:400;letter-spacing:.01em;
 
     <div class="final-acciones">
       <button class="btn btn-sec" id="btn-volver-mapa" type="button">Ver el mapa</button>
-      <p class="pack" id="pack-final"></p>
       <button class="enlace-discreto" id="btn-reiniciar-2" type="button" style="margin:0 auto">↺ Reiniciar ruta</button>
     </div>
   </section>
@@ -473,45 +467,44 @@ h1,h2,h3,.titulo{font-family:var(--titulo);font-weight:400;letter-spacing:.01em;
 <script>
 /* =========================================================
    DATOS — editar aquí (copiados de DATOS.md).
-   ⚠️ Quesos y código aún son DE EJEMPLO.
+   ⚠️ Revisar los datos de quesos marcados "Por confirmar". El código aún es DE EJEMPLO.
    ========================================================= */
 var DATOS = {
   bienvenida: "Tres cervezas, seis quesos y un camino que va de lo suave a lo intenso. Sigue el mapa y encuentra el tesoro.",
-  pack: { texto: "Pack para 2: estuche de 3 cervezas + tabla con 2 piezas de cada queso" },  // sin precio: cada negocio vende por separado
   paradas: [
     {
       lugar: "La despensa encantada", nivel: "Suave", intensidad: 1,
       cerveza: { nombre: "Chela", estilo: "Blonde Ale · 5,2 %", color: "#f2c14e",
         desc: "Dorada, ligera y muy fácil de beber. Notas de pan, miel suave y un final limpio." },
       quesos: [
-        { nombre: "Tierno de cabra de Ibi", leche: "Cabra pasteurizada", origen: "Ibi (Alicante)", maduracion: "20 días",
-          notas: "Láctico y fresco, con un punto ácido y textura cremosa." },
-        { nombre: "Tronchón tierno", leche: "Oveja y cabra", origen: "Maestrazgo (Castellón)", maduracion: "1 mes",
-          notas: "Mantecoso, dulce, con recuerdo a frutos secos tiernos." }
+        { nombre: "San Simón da Costa DOP", leche: "Vaca", origen: "Terra Chá, Lugo (Galicia)", maduracion: "Mín. 45 días, ahumado con abedul",
+          notas: "Ahumado suave de madera, mantecoso y con un punto ácido." },
+        { nombre: "Zielo", queseria: "Quesería Zarcillera", leche: "Cabra", origen: "Zarcilla de Ramos, Lorca (Murcia)", maduracion: "Por confirmar",
+          notas: "Láctico y fresco, con la acidez amable de la cabra." }
       ],
-      porque: "La cerveza ligera limpia la grasa del queso sin taparlo y realza su frescura láctica."
+      porque: "La Chela, ligera y fresca, limpia el ahumado y la grasa sin taparlos y realza la acidez láctica de la cabra."
     },
     {
       lugar: "El refugiō escondido", nivel: "Media", intensidad: 2,
       cerveza: { nombre: "Rojica", estilo: "Red Ale · 5,2 %", color: "#c46a1c",
         desc: "Color cobre, cuerpo medio y maltas tostadas. Caramelo suave y un amargor equilibrado." },
       quesos: [
-        { nombre: "Semicurado de oveja", leche: "Oveja cruda", origen: "La Mancha", maduracion: "4 meses",
-          notas: "Sabroso y equilibrado, con toques de hierba seca y avellana." },
-        { nombre: "Idiazabal ahumado", leche: "Oveja latxa cruda", origen: "País Vasco", maduracion: "5 meses",
-          notas: "Ahumado de haya, firme y con final ligeramente picante." }
+        { nombre: "Comté AOP", queseria: "Marcel Petite", leche: "Vaca cruda (montbéliarde)", origen: "Jura (Francia), afinado en el Fort Saint-Antoine", maduracion: "Por confirmar",
+          notas: "Avellana tostada, mantequilla y caramelo, con cristales crujientes." },
+        { nombre: "Encina Sola curado", leche: "Por confirmar", origen: "Por confirmar", maduracion: "Por confirmar",
+          notas: "Intenso y equilibrado, con recuerdo a frutos secos y final persistente." }
       ],
-      porque: "El caramelo tostado de la malta abraza el ahumado y la avellana del queso."
+      porque: "La malta caramelizada de la Rojica realza los frutos secos y el caramelo de los quesos curados."
     },
     {
       lugar: "Noche en el Castillo", nivel: "Intensa", intensidad: 3,
       cerveza: { nombre: "Imperator", estilo: "Brown Ale · 6 %", color: "#5a2e12",
         desc: "Tostada, intensa. Con notas a caramelo tostado, cacao y café. Cálida y larga en boca." },
       quesos: [
-        { nombre: "Cabrales", leche: "Vaca, oveja y cabra crudas", origen: "Picos de Europa (Asturias)", maduracion: "3 meses en cueva",
-          notas: "Azul potente, picante y salino, con textura untuosa." },
-        { nombre: "Oveja viejo en aceite", leche: "Oveja cruda", origen: "Ibi (Alicante)", maduracion: "12 meses",
-          notas: "Intenso, cristalino, con notas de aceituna y final largo." }
+        { nombre: "Patamulo con cerveza", queseria: "Zagal de la Mesta", leche: "Oveja", origen: "Por confirmar", maduracion: "Por confirmar",
+          notas: "Con cerveza tostada sin gluten de Althaia: malta y pan tostado sobre el sabor profundo de la oveja." },
+        { nombre: "Patamulo Azul", queseria: "Prestes", leche: "Por confirmar", origen: "Por confirmar", maduracion: "Por confirmar",
+          notas: "Azul cremoso y picante, con final largo y salino." }
       ],
       porque: "El dulzor de las maltas y el caramelo equilibra la sal y el picante: contraste que se funde en boca."
     }
@@ -554,9 +547,7 @@ var DATOS = {
   function esc(s){ return String(s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
 
   /* ---------- Textos fijos ---------- */
-  var packTxt = esc(DATOS.pack.texto);
   $("bienvenida").textContent = DATOS.bienvenida;
-  ["pack-inicio","pack-mapa","pack-final"].forEach(function(id){ $(id).innerHTML = packTxt; });
 
   document.querySelectorAll(".etiqueta").forEach(function(el){
     var p = DATOS.paradas[+el.dataset.e];
@@ -678,7 +669,7 @@ var DATOS = {
       '</div>' +
       '<div class="quesos">' + p.quesos.map(function(q){
         return '<article class="queso"><h4>' + iconoQueso + esc(q.nombre) + '</h4>' +
-          '<dl class="datos"><dt>Leche</dt><dd>' + esc(q.leche) + '</dd><dt>Origen</dt><dd>' + esc(q.origen) + '</dd><dt>Maduración</dt><dd>' + esc(q.maduracion) + '</dd></dl>' +
+          '<dl class="datos">' + (q.queseria ? '<dt>Quesería</dt><dd>' + esc(q.queseria) + '</dd>' : '') + '<dt>Leche</dt><dd>' + esc(q.leche) + '</dd><dt>Origen</dt><dd>' + esc(q.origen) + '</dd><dt>Maduración</dt><dd>' + esc(q.maduracion) + '</dd></dl>' +
           '<p class="notas">' + esc(q.notas) + '</p></article>';
       }).join("") + '</div>' +
       '<div class="porque"><b>Por qué maridan</b>' + esc(p.porque) + '</div>';

@@ -1,7 +1,8 @@
 # DATOS DE LA CATA — Feria Alicante Gastronómica
 
 > ⚠️ **Datos parcialmente de ejemplo.** Ya son reales: título «Ruta del tesoro gastronómico», nombre de El Refugiō, nombres del mapa, cervezas y su graduación, Instagram de El Refugiō y la cerveza de la parada 3.
-> Siguen siendo de ejemplo: estilo de Chela y descripciones de Chela y Rojica, quesos, código de descuento, Instagram de La Despensa.
+> Siguen siendo de ejemplo: estilo de Chela y descripciones de Chela y Rojica, código de descuento, Instagram de La Despensa.
+> Quesos: reales, pero los datos marcados [PENDIENTE]/[VERIFICAR] los he buscado o deducido y hay que revisarlos (en la web salen como «Por confirmar»).
 
 ## Título del mapa
 Ruta del tesoro gastronómico
@@ -17,8 +18,7 @@ Subtítulo: Queso y cerveza
 Tres cervezas, seis quesos y un camino que va de lo suave a lo intenso. Sigue el mapa y encuentra el tesoro.
 
 ## Pack
-- Estuche de 3 cervezas + tabla con 2 piezas de cada queso, para 2 personas.
-- Sin precio en la web: cada negocio vende lo suyo por separado.
+- No se muestra en la web (ni descripción ni precio): cada negocio vende lo suyo por separado.
 
 ## Parada 1 — Suave
 **Nombre en el mapa:** La despensa encantada
@@ -26,19 +26,19 @@ Tres cervezas, seis quesos y un camino que va de lo suave a lo intenso. Sigue el
 **Cerveza:** Chela · Blonde Ale [PENDIENTE confirmar estilo] · 5,2 %
 Descripción [EJEMPLO]: Dorada, ligera y muy fácil de beber. Notas de pan, miel suave y un final limpio.
 
-**Queso 1:** Tierno de cabra de Ibi
-- Leche: cabra pasteurizada
-- Origen: Ibi (Alicante)
-- Maduración: 20 días
-- Notas: Láctico y fresco, con un punto ácido y textura cremosa.
+**Queso 1:** San Simón da Costa DOP
+- Leche: vaca
+- Origen: Terra Chá, Lugo (Galicia)
+- Maduración: mínimo 45 días, ahumado con madera de abedul
+- Notas: Ahumado suave de madera, mantecoso y con un punto ácido.
 
-**Queso 2:** Tronchón tierno
-- Leche: oveja y cabra
-- Origen: Maestrazgo (Castellón)
-- Maduración: 1 mes
-- Notas: Mantecoso, dulce, con recuerdo a frutos secos tiernos.
+**Queso 2:** Zielo — Quesería Zarcillera
+- Leche: cabra [VERIFICAR]
+- Origen: Zarcilla de Ramos, Lorca (Murcia) [VERIFICAR]
+- Maduración: [PENDIENTE]
+- Notas: Láctico y fresco, con la acidez amable de la cabra. [VERIFICAR]
 
-**Por qué maridan:** La cerveza ligera limpia la grasa del queso sin taparlo y realza su frescura láctica.
+**Por qué maridan:** La Chela, ligera y fresca, limpia el ahumado y la grasa sin taparlos y realza la acidez láctica de la cabra.
 
 ## Parada 2 — Media
 **Nombre en el mapa:** El refugiō escondido
@@ -46,19 +46,19 @@ Descripción [EJEMPLO]: Dorada, ligera y muy fácil de beber. Notas de pan, miel
 **Cerveza:** Rojica · Red Ale · 5,2 %
 Descripción [EJEMPLO]: Color cobre, cuerpo medio y maltas tostadas. Caramelo suave y un amargor equilibrado.
 
-**Queso 1:** Semicurado de oveja
-- Leche: oveja cruda
-- Origen: La Mancha
-- Maduración: 4 meses
-- Notas: Sabroso y equilibrado, con toques de hierba seca y avellana.
+**Queso 1:** Comté AOP — Marcel Petite
+- Leche: vaca cruda (montbéliarde)
+- Origen: Jura (Francia), afinado en el Fort Saint-Antoine
+- Maduración: [PENDIENTE: meses]
+- Notas: Avellana tostada, mantequilla y caramelo, con cristales crujientes.
 
-**Queso 2:** Idiazabal ahumado
-- Leche: oveja latxa cruda
-- Origen: País Vasco
-- Maduración: 5 meses
-- Notas: Ahumado de haya, firme y con final ligeramente picante.
+**Queso 2:** Encina Sola curado
+- Leche: [PENDIENTE]
+- Origen: [PENDIENTE]
+- Maduración: [PENDIENTE]
+- Notas: Intenso y equilibrado, con recuerdo a frutos secos y final persistente. [VERIFICAR]
 
-**Por qué maridan:** El caramelo tostado de la malta abraza el ahumado y la avellana del queso.
+**Por qué maridan:** La malta caramelizada de la Rojica realza los frutos secos y el caramelo de los quesos curados.
 
 ## Parada 3 — Intensa
 **Nombre en el mapa:** Noche en el Castillo
@@ -66,17 +66,17 @@ Descripción [EJEMPLO]: Color cobre, cuerpo medio y maltas tostadas. Caramelo su
 **Cerveza:** Imperator · Brown Ale · 6 %
 Descripción: Tostada, intensa. Con notas a caramelo tostado, cacao y café. Cálida y larga en boca.
 
-**Queso 1:** Cabrales
-- Leche: vaca, oveja y cabra crudas
-- Origen: Picos de Europa (Asturias)
-- Maduración: 3 meses en cueva
-- Notas: Azul potente, picante y salino, con textura untuosa.
+**Queso 1:** Patamulo con cerveza — Quesería Zagal de la Mesta (con cerveza Althaia tostada sin gluten)
+- Leche: oveja
+- Origen: [PENDIENTE]
+- Maduración: [PENDIENTE]
+- Notas: Con cerveza tostada sin gluten de Althaia: malta y pan tostado sobre el sabor profundo de la oveja. [VERIFICAR]
 
-**Queso 2:** Oveja viejo en aceite
-- Leche: oveja cruda
-- Origen: Ibi (Alicante)
-- Maduración: 12 meses
-- Notas: Intenso, cristalino, con notas de aceituna y final largo.
+**Queso 2:** Patamulo Azul — Prestes
+- Leche: [PENDIENTE]
+- Origen: [PENDIENTE]
+- Maduración: [PENDIENTE]
+- Notas: Azul cremoso y picante, con final largo y salino. [VERIFICAR]
 
 **Por qué maridan:** El dulzor de las maltas y el caramelo equilibra la sal y el picante: contraste que se funde en boca.
 
